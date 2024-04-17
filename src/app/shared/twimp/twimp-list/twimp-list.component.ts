@@ -16,9 +16,12 @@ export class TwimpListComponent implements OnInit {
 
   ngOnInit() {
     this.authors.push(new Author('1'));
-    this.twimps.push(new Twimp('1', '', this.authors[0], this.text, '2021-01-01T00:00:00.000Z'));
-    this.twimps.push(new Twimp('2', '', this.authors[0], this.text, '2021-01-01T00:00:00.000Z'));
-    this.twimps.push(new Twimp('3', '', this.authors[0], this.text, '2021-01-01T00:00:00.000Z'));
-    this.twimps.push(new Twimp('4', '', this.authors[0], this.text, '2021-01-01T00:00:00.000Z'));
+    console.log(this.authors);
+    this.twimps.push(new Twimp('1', '', this.authors[0], this.text, '2021-01-01'));
+    console.log(this.twimps);
+    this.twimps.push(new Twimp('2', '', this.authors[0], this.text, '2021-01-01'));
+    this.twimps.push(new Twimp('3', '', this.authors[0], this.text, '2021-01-01'));
+    this.twimps.push(new Twimp('4', '', this.authors[0], this.text, '2021-01-01'));
+    console.log(this.twimps);
   }
 }
